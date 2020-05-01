@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     SimpleArcLoader simpleArcLoader;
     ScrollView scrollView;
     PieChart pieChart;
-    Button btntrack;
+    Button btntrack,btnbd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,12 +48,20 @@ public class MainActivity extends AppCompatActivity {
         scrollView = findViewById(R.id.scrollViewstats);
         pieChart = findViewById(R.id.piechart);
         btntrack = findViewById(R.id.btntrack);
+        btnbd = findViewById(R.id.btnbd);
 
         fetchData();
         btntrack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,CountryActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnbd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,LocalActivity.class);
                 startActivity(intent);
             }
         });

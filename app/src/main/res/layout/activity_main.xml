@@ -130,7 +130,7 @@
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:layout_below="@+id/cardViewgraph"
-        android:layout_above="@+id/btntrack"
+        android:layout_above="@+id/linbtn"
         android:layout_margin="15dp"
         app:cardElevation="10dp"
         app:cardCornerRadius="5dp">
@@ -469,16 +469,37 @@
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
-    <Button
-        android:id="@+id/btntrack"
+    <LinearLayout
+        android:id="@+id/linbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="15dp"
-        android:background="@color/color_one"
-        android:text="Track by Countries"
-        android:textColor="#fff">
-    </Button>
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btnbd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/color_one"
+            android:text="Bangladesh"
+            android:textColor="#fff">
+        </Button>
+        <Button
+            android:id="@+id/btntrack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/color_one"
+            android:text="Track by Countries"
+            android:textColor="#fff">
+        </Button>
+        
+    </LinearLayout>
 
 
 

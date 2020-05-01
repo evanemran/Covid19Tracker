@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:weightSum="2">
+    <TextView
+        android:id="@+id/areaname"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="area name"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:textAlignment="textEnd"
+        android:layout_weight="1">
+
+    </TextView>
+    <TextView
+        android:id="@+id/areaamount"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="10 "
+        android:textColor="#000"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:layout_weight="1">
+
+    </TextView>
+
+</LinearLayout>

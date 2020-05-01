@@ -11,7 +11,8 @@
         android:roundIcon="@drawable/covid"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".LocalActivity"></activity>
+        <activity android:name=".DetailActivity" />
         <activity android:name=".CountryActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
